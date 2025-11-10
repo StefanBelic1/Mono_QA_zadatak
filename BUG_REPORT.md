@@ -142,10 +142,10 @@ Prikazuje se stari broj (npr. 2 slike) sve dok se stranica ručno ne osvježi, n
 3. Odaberi i uploadaj datoteku s računala čiji je naziv drugačiji (npr. "IMG_1234.jpg").​
 4. Promatraj vrijednost polja "Photo Name" nakon završetka uploada.​
 
-Expected Result
+### Expected Result
 Ručno uneseni naziv treba ostati nepromijenjen nakon odabira i uploada datoteke, osim ako aplikacija prije uploada eksplicitno upozori da će naziv biti prepisan imenom datoteke.​
 
-Actual Result
+### Actual Result
 Nakon uploada, vrijednost polja automatski se prepisuje na naziv datoteke s računala (npr. s "forest" na "IMG_1234"), čime se gubi korisnički unos bez jasnog upozorenja ili kontrole.​
 
 ---
