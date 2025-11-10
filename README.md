@@ -1,0 +1,1 @@
+# Mono_QA_zadatak
