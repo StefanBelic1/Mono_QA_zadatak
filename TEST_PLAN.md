@@ -1,41 +1,41 @@
-# TEST PLAN – Photo Gallery 
-
-## Analiza aplikacije
-
-Demo: [https://demo.baasic.com/angular/starterkit-photo-gallery/main](https://demo.baasic.com/angular/starterkit-photo-gallery/main)
-
-Aplikacija je jednostavna web galerija za dijeljenje fotografija.  
-Omogućuje korisnicima:
-- Registraciju i prijavu na sustav  
-- Pregled i pretragu slika  
-- Kreiranje albuma te učitavanje nove slike  
-- Odjavu sa profila
+# 🧩 TEST PLAN – Photo Gallery  
 
 ---
 
-## Automation prioritizacija
+## Application Analysis  
 
-| Scenarij | Opis | Prioritet | Razlog |
-|-----------|-------|------------|--------|
-| Login – pozitivan | Uspješna prijava sa validnim korisničkim podacima | **HIGH** | Kritična funkcionalnost |
-| Login – negativan | Neuspješna prijava sa pogrešnim podacima | **HIGH** | Provjera validacije i sigurnosti |
-| Upload fotografije | Korisnik može dodati novu sliku | **HIGH** | Ključna funkcionalnost aplikacije |
-| Pregled galerije | Prikaz postojećih fotografija | **MEDIUM** | Bitno za korisničko iskustvo |
-| Komentiranje | Dodavanje komentara na sliku | **MEDIUM** | Sekundarna funkcionalnost |
-| Lajkanje slike | Klik na "like" povećava broj lajkova | **LOW** | Dodatna funkcionalnost |
-| Logout | Odjava korisnika | **HIGH** | Bitno za sigurnost |
+**Demo:** [https://demo.baasic.com/angular/starterkit-photo-gallery/main](https://demo.baasic.com/angular/starterkit-photo-gallery/main)  
+
+The application is a simple web-based photo gallery designed for sharing images.  
+It allows users to:  
+- Register and log in to the system  
+- Browse and search photos  
+- Create albums and upload new photos  
+- Log out of their profile  
 
 ---
 
-## Test strategija
+## Automation Prioritization  
 
-### Tipovi testiranja
-- **Exploratory testing** – ručno istraživanje zbog shvaćanja aplikacije i otkrivanja bugova   
-- **Functional testing** – provjera osnovnih funkcionalnosti (registration, login, upload, logout)  
-- **Regression testing** – automatizirani testovi koji se redovno pokreću  
+| Scenario | Description | Priority | Reason |
+|-----------|-------------|-----------|--------|
+| Login – Positive | Successful login with valid user credentials | **HIGH** | Critical functionality |
+| Login – Negative | Failed login with invalid credentials | **HIGH** | Validation and security check |
+| Photo Upload | User can upload a new photo | **HIGH** | Core functionality of the app |
+| Gallery View | Display of existing photos | **MEDIUM** | Important for user experience |
+| Logout | User logs out successfully | **HIGH** | Important for security |
 
-### Alat i okruženje
-- **Automation tool:** Cypress  
+---
+
+## Test Strategy  
+
+### Types of Testing  
+- **Exploratory Testing** – manual exploration to understand the application and identify bugs  
+- **Functional Testing** – verifying core features (registration, login, upload, logout)  
+- **Regression Testing** – automated tests executed regularly to detect new issues after updates  
+
+### Tools and Environment  
+- **Automation Tool:** Cypress  
 - **Browser:** Chrome  
-- **OS:** Windows 10, Android 14  
-- **Test podaci:** test korisnički račun i sample slike (.jpg)
+- **Operating Systems:** Windows 10, Android 14  
+- **Test Data:** test user account and sample images (.jpg)  
