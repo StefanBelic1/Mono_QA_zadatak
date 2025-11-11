@@ -13,7 +13,7 @@
 2. Observe the dropdown menu icon (screenshots/bug1.png).  
 
 ### Expected Result  
-The dropdown menu should use a recognizable icon, such as a classic “hamburger” icon or a downward arrow (screenshots/hamburger.png).  
+The dropdown menu should use a recognizable icon, such as a classic "hamburger" icon or a downward arrow (screenshots/hamburger.png).  
 
 ### Actual Result  
 The dropdown button is unclear and looks like a theme selector (dark/light mode).  
@@ -29,13 +29,13 @@ The dropdown button is unclear and looks like a theme selector (dark/light mode)
 ### Steps to Reproduce  
 1. Open the homepage.  
 2. Scroll to the bottom.  
-3. Click on “Blog name.”  
+3. Click on "Blog name."  
 
 ### Expected Result  
 The copyright text should include the correct name and link to the relevant website.  
 
 ### Actual Result  
-“Blog name” is an empty link and does not redirect anywhere when clicked. (screenshots/bug_blog_name.png)  
+"Blog name" is an empty link and does not redirect anywhere when clicked. (screenshots/bug_blog_name.png)  
 
 ---
 
@@ -47,14 +47,14 @@ The copyright text should include the correct name and link to the relevant webs
 
 ### Steps to Reproduce  
 1. Log in to the application.  
-2. Open **My Album** (e.g., "TestAlbum").  
+2. Open My Album (e.g., "TestAlbum").  
 3. Click on any image within your album.  
 
 ### Expected Result  
 The selected image should open in a detailed view.  
 
 ### Actual Result  
-Instead of displaying the image, a **“404: Page Missing”** page appears. (screenshots/bug3_404.png)  
+Instead of displaying the image, a 404: "Page Missing" page appears. (screenshots/bug3_404.png)  
 
 ---
 
@@ -68,7 +68,7 @@ Instead of displaying the image, a **“404: Page Missing”** page appears. (sc
 1. Log in to the application.  
 2. Open your profile.  
 3. Open the dropdown menu.  
-4. Click on “Menu.”  
+4. Click on "Menu."  
 
 ### Expected Result  
 The menu should open without redirecting to the homepage.  
@@ -89,7 +89,7 @@ After clicking, the menu opens but the user is redirected to the homepage.
 2. Observe the displayed albums.  
 
 ### Expected Result  
-The homepage should show only **albums**, each with a cover photo and title.  
+The homepage should show only albums, each with a cover photo and title.  
 Individual images should appear only after entering a specific album.  
 
 ### Actual Result  
@@ -110,7 +110,7 @@ This causes confusion, as users cannot distinguish between albums. (screenshots/
 3. Observe the album photo count without refreshing the page.  
 
 ### Expected Result  
-After deletion, the album’s photo count should update immediately to reflect the correct number.  
+After deletion, the album's photo count should update immediately to reflect the correct number.  
 
 ### Actual Result  
 The old count remains visible until the page is manually refreshed.  
@@ -125,15 +125,15 @@ The old count remains visible until the page is manually refreshed.
 
 ### Steps to Reproduce  
 1. Open the upload form for adding a new photo.  
-2. Enter a custom name in the “Photo Name” field (e.g., “forest”).  
-3. Select and upload a file with a different filename (e.g., “IMG_1234.jpg”).  
-4. Observe the “Photo Name” field after upload.  
+2. Enter a custom name in the "Photo Name" field (e.g., "forest").  
+3. Select and upload a file with a different filename (e.g., "IMG_1234.jpg").  
+4. Observe the "Photo Name" field after upload.  
 
 ### Expected Result  
 The manually entered name should remain unchanged unless the app explicitly warns the user.  
 
 ### Actual Result  
-After upload, the “Photo Name” field is automatically replaced with the file name (“forest” → “IMG_1234”), overwriting user input without confirmation.  
+After upload, the "Photo Name" field is automatically replaced with the file name ("forest" → "IMG_1234"), overwriting user input without confirmation.  
 
 ---
 
@@ -145,18 +145,18 @@ After upload, the “Photo Name” field is automatically replaced with the file
 
 ### Steps to Reproduce  
 1. Open the homepage.  
-2. Observe the hero message: “We are celebrating the vastness of life.”  
+2. Observe the hero message: "We are celebrating the vastness of life."  
 
 ### Expected Result  
 The message should be grammatically correct and more natural, e.g.,  
-“We celebrate the vastness of life.”  
+"We celebrate the vastness of life."  
 
 ### Actual Result  
-The current phrase “We are celebrating the vastness of life” sounds unnatural and inconsistent with the app’s tone.  
+The current phrase "We are celebrating the vastness of life" sounds unnatural and inconsistent with the app's tone.  
 
 ---
 
-## ♦️ Bug #9 – “Set New Password” Link Leads to 404 Page  
+## ♦️ Bug #9 – "Set New Password" Link Leads to 404 Page  
 
 **Type:** Functional Bug  
 **Severity:** High  
@@ -164,16 +164,16 @@ The current phrase “We are celebrating the vastness of life” sounds unnatura
 
 ### Steps to Reproduce  
 1. Open the homepage.  
-2. Open **Menu** → **Login**.  
-3. Click **Forgot Your Password? Recover Your Password Here!**  
+2. Open Menu → Login.  
+3. Click "Forgot Your Password? Recover Your Password Here!"  
 4. Enter a valid registered email.  
-5. Open the received email and click **Set New Password**.  
+5. Open the received email and click "Set New Password".  
 
 ### Expected Result  
 A page should open where the user can set a new password successfully.  
 
 ### Actual Result  
-The link opens a **“404 Not Found”** page.  
+The link opens a "404 Not Found" page.  
 Password reset cannot be completed. (screenshots/bug_newPassword.png)  
 
 ---
@@ -185,15 +185,15 @@ Password reset cannot be completed. (screenshots/bug_newPassword.png)
 **Environment:** Chrome, Windows 10, Android 14  
 
 ### Steps to Reproduce  
-1. Open the **Login** page.  
-2. Click any option under **Social Login** (Facebook, Google, Twitter, GitHub).  
+1. Open the Login page.  
+2. Click any option under Social Login (Facebook, Google, Twitter, GitHub).  
 
 ### Expected Result  
-A login window should appear for the chosen provider (OAuth flow), and the user should be authenticated and redirected back to the app.  
+A login window should appear for the chosen provider, and the user should be authenticated and redirected back to the app.  
 
 ### Actual Result  
 An error message appears:  
-“undefined: Social login configuration not found.”  
+"undefined: Social login configuration not found."  
 Social login is not functional.  
 
 ---
@@ -206,9 +206,9 @@ Social login is not functional.
 
 ### Steps to Reproduce  
 1. Open the registration page.  
-2. Enter an invalid email address, e.g., **test@gmailc.om**.  
+2. Enter an invalid email address, e.g., "test@gmailc.om".  
 3. Complete registration.  
-4. Attempt to log in.  
+4. Attempt to register.  
 
 ### Expected Result  
 The system should display an error message indicating the email format is invalid and prevent registration.  
@@ -293,15 +293,15 @@ Allowing users to search by author would make it easier to find photos from spec
 
 ---
 
-### Suggestion #2 – Add “Drag & Drop” Photo Upload  
+### Suggestion #2 – Add "Drag & Drop" Photo Upload  
 
 **Type:** UX Improvement  
 **Priority:** Medium  
 **Environment:** Chrome, Windows 10  
 
 #### Description  
-Currently, photos can only be uploaded via the standard **“Browse files”** option.  
-It is recommended to add a **drag & drop** upload feature within the upload area.  
+Currently, photos can only be uploaded via the standard "Browse files" option.  
+It is recommended to add a drag & drop upload feature within the upload area.  
 
 #### Expected Benefit  
 Provides a faster and more intuitive way to upload photos, aligning with modern web app standards.  
@@ -317,8 +317,8 @@ The drag & drop feature should complement, not replace, the existing upload dial
 
 #### Description  
 Currently, uploaded photos automatically inherit the file name, even if the user entered a custom title beforehand.  
-If the “Photo Name” field is already filled, it should not be overwritten.  
-Optionally, add a toggle “Use File Name” that lets the user choose whether to sync the title with the file name.  
+If the "Photo Name" field is already filled, it should not be overwritten.  
+Optionally, add a toggle "Use File Name" that lets the user choose whether to sync the title with the file name.  
 
 #### Expected Benefit  
 Prevents user input from being overwritten and reduces the need to re-enter photo titles after upload.  
@@ -350,7 +350,7 @@ Introduce pagination — e.g., display 20 photos per page, with navigation to ne
 
 #### Description  
 Currently, search results appear only after entering the full term and pressing Enter.  
-Implement **autocomplete** so that suggestions appear as the user types (e.g., after two characters).  
+Implement autocomplete so that suggestions appear as the user types (e.g., after two characters).  
 Include a slight delay (e.g., 300–500 ms) to avoid excessive API requests.  
 
 #### Expected Benefit  
