@@ -9,7 +9,6 @@ Omogućuje korisnicima:
 - Registraciju i prijavu na sustav  
 - Pregled i pretragu slika  
 - Kreiranje albuma te učitavanje nove slike  
-- Komentiranje i lajkanje slika  
 - Odjavu sa profila
 
 ---
@@ -32,11 +31,11 @@ Omogućuje korisnicima:
 
 ### Tipovi testiranja
 - **Exploratory testing** – ručno istraživanje zbog shvaćanja aplikacije i otkrivanja bugova   
-- **Functional testing** – provjera osnovnih funkcionalnosti (login, upload, komentari, logout)  
+- **Functional testing** – provjera osnovnih funkcionalnosti (registration, login, upload, logout)  
 - **Regression testing** – automatizirani testovi koji se redovno pokreću  
 
 ### Alat i okruženje
 - **Automation tool:** Cypress  
 - **Browser:** Chrome  
-- **OS:** Windows 10  
+- **OS:** Windows 10, Android 14  
 - **Test podaci:** test korisnički račun i sample slike (.jpg)
