@@ -21,9 +21,12 @@ It allows users to:
 |-----------|-------------|-----------|--------|
 | Login – Positive | Successful login with valid user credentials | **HIGH** | Critical functionality |
 | Login – Negative | Failed login with invalid credentials | **HIGH** | Validation and security check |
-| Photo Upload | User can upload a new photo | **HIGH** | Core functionality of the app |
-| Gallery View | Display of existing photos | **MEDIUM** | Important for user experience |
+| Create Gallery | User can create a new gallery | **HIGH** | Core functionality of the app |
+| Delete Gallery | User can delete a gallery | **HIGH** | Very important for user experience |
+| Open Album | User can open an existing album and view its content | **MEDIUM** | Important for verifying navigation and data loading |
+| Open Photo | User can open a single photo from an album | **MEDIUM** | Ensures that individual media items can be displayed correctly |
 | Logout | User logs out successfully | **HIGH** | Important for security |
+
 
 ---
 
