@@ -1,1 +1,124 @@
-# Mono_QA_zadatak
+# 🧪 QA Automation – Photo Gallery (Cypress E2E Tests)
+
+This repository contains automated end-to-end tests written in **Cypress** for the Photo Gallery web application  
+👉 [Demo Application](https://demo.baasic.com/angular/starterkit-photo-gallery/main)
+
+---
+
+## 📖 Project Overview
+
+The goal of this project is to demonstrate practical QA skills through:
+- **Functional testing** of the core application features  
+- **Exploratory testing** and bug documentation  
+- **Automation** using Cypress for key user flows  
+
+All manual findings are documented in:
+- 🐞 `BUG_REPORT.md` – detailed list of discovered issues  
+- 🧩 `TEST_PLAN.md` – description of test strategy, prioritization, and coverage  
+
+Automated tests are located in the `e2e/` folder.
+
+---
+
+## ⚙️ Framework and Tools Used
+
+| Tool / Library | Purpose |
+|-----------------|----------|
+| **Cypress** | Main framework for end-to-end web testing |
+| **cypress-file-upload** | Plugin for image upload testing |
+| **JavaScript (ES6)** | Test scripting language |
+| **Google Chrome** | Default browser used for test execution |
+| **Windows 10 / Android 14** | Test environments |
+
+---
+
+## 🗂️ Project Structure
+
+Mono_QA_zadatak/
+│
+├─ e2e/ # Cypress E2E test files (main automation tests)
+│ ├─ create_gallery.cy.js
+│ ├─ delete_gallery.cy.js
+│ ├─ login_negative.cy.js
+│ ├─ login_positive.cy.js
+│ ├─ logout.cy.js
+│ ├─ open_album.cy.js
+│ ├─ open_photo.cy.js
+│
+├─ fixtures/ # Test data used in automation
+│ ├─ forest.jpg
+│ ├─ istockphoto-1550071750-612x612.jpg
+│ └─ pexels-helenalopes-1388069.jpg
+│
+├─ screenshots/ # Screenshots used for bug documentation
+│
+├─ BUG_REPORT.md # Full list of identified bugs
+├─ TEST_PLAN.md # Test strategy and prioritization
+├─ README.md # Project documentation (this file)
+└─ package.json # Dependencies and Cypress scripts
+
+
+
+---
+
+## 🧩 What Is Covered
+
+The automated Cypress tests cover the following scenarios:
+
+| Scenario | Description | Priority |
+|-----------|-------------|-----------|
+| **Login – Positive** | Successful login with valid user credentials | **HIGH** |
+| **Login – Negative** | Failed login with invalid credentials | **HIGH** |
+| **Create Gallery** | User can create a new gallery/album | **HIGH** |
+| **Delete Gallery** | User can delete an existing album | **HIGH** |
+| **Open Album** | User can open an existing album and view photos | **MEDIUM** |
+| **Open Photo** | User can open a specific photo from an album | **MEDIUM** |
+| **Upload Photo** | User can upload a new image to an album | **HIGH** |
+| **Logout** | User logs out successfully | **HIGH** |
+
+Additional validation tests include:
+- Password validation on registration  
+- Functional testing of “Forgot Password” flow  
+- Upload behavior when missing required fields  
+
+---
+
+## 💻 Setup Instructions
+
+### 1️⃣ Install Node.js and npm
+-Download and install Node.js (which includes npm):  
+🔗 [https://nodejs.org/](https://nodejs.org/)
+
+### Verify installation:
+node -v
+npm -v
+### 2️⃣ Clone the Repository
+
+git clone https://github.com/StefanBelic1/Mono_QA_zadatak.git
+cd Mono_QA_zadatak
+### 3️⃣ Install Dependencies
+npm install
+- This will install Cypress and cypress-file-upload.
+
+### 4️⃣ Run Cypress Tests
+🖥️ Option 1: Open Cypress GUI
+
+npx cypress open
+Then select:
+E2E Testing
+Choose browser (e.g. Chrome)
+Pick any test file under /e2e/ to run
+
+⚡ Option 2: Run in Headless Mode
+npx cypress run
+or run a specific test:
+npx cypress run --spec "cypress/e2e/login.cy.js"
+🧠 Notes for Reviewers
+All test images used in upload tests are located inside the fixtures/ folder
+(Cypress automatically loads files from there).
+
+Screenshots for discovered bugs are stored in the screenshots/ folder.
+
+The package.json file includes all dependencies for quick setup and testing.
+
+Tests can be executed on both Windows and macOS/Linux environments.
