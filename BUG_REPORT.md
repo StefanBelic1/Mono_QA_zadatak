@@ -275,6 +275,50 @@ After scrolling, the gallery closes unexpectedly, preventing browsing.
 
 ---
 
+## ♦️ Bug #15 – Unnecessary Additional Step When Creating an Album  
+
+**Type:** UX / Functional Bug  
+**Severity:** Medium  
+**Environment:** Chrome, Windows 10, Android 14  
+
+### Steps to Reproduce  
+1. Open the application and go to the Create Album page.  
+2. Enter a valid Album Name and Description.  
+3. Click Save Album.  
+4. Observe that a new screen appears saying "Almost done!", asking to upload a cover image.  
+
+### Expected Result  
+The album creation process should request all required information, including the cover image on the same screen, before clicking Save Album.  
+The album should not require an additional confirmation screen.  
+
+### Actual Result  
+After saving the album, a new page appears "Almost done!" asking the user to upload a cover image.  
+This introduces an unnecessary extra step and interrupts the album creation flow.  
+
+---
+
+## ♦️ Bug #16 – Weak Password Accepted During Registration  
+
+**Type:** Validation / Security Bug  
+**Severity:** High  
+**Environment:** Chrome, Windows 10, Android 14  
+
+### Steps to Reproduce  
+1. Open the registration page.  
+2. Enter a valid email address and username.  
+3. Set the password to a weak value, e.g., "asdb" (only lowercase letters, no numbers or symbols).  
+4. Complete the registration process.  
+
+### Expected Result  
+The system should validate the password strength and prevent registration with weak passwords.  
+It should require a password that includes a combination of uppercase letters, lowercase letters, numbers, and/or special characters and enforce a minimum length to at least 8 characters.  
+
+### Actual Result  
+The application allows registration with an extremely weak password such as "asdb", without any warning or validation error.  
+
+
+---
+
 # 💡 Suggestions / Improvements  
 
 ---
