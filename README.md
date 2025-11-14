@@ -125,5 +125,11 @@ npx cypress run --spec "cypress/e2e/login.cy.js"
 All test images used in upload tests are located inside the fixtures/ folder
 (Cypress automatically loads files from there).
 
+---
+Valid login credentials:
+- Username: stefanbelic
+- Password: sifra123
+
+
 Screenshots for discovered bugs are stored in the screenshots/ folder.
 
