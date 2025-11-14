@@ -28,7 +28,7 @@ The dropdown button is unclear and looks like a theme selector (dark/light mode)
 
 ### Steps to Reproduce  
 1. Open the homepage (https://demo.baasic.com/angular/starterkit-photo-gallery/main).  
-2. Scroll to the bottom.  
+2. Scroll to the bottom of page.  
 3. Click on "Blog name."  
 
 ### Expected Result  
