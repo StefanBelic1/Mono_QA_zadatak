@@ -34,7 +34,7 @@ Automated tests are located in the `e2e/` folder.
 
 ## 🗂️ Project Structure
 
-Mono_QA_zadatak/
+Mono_QA_task/
 │
 ├─ e2e/                 
 │  ├─ create_gallery.cy.js
@@ -93,20 +93,20 @@ node -v
 npm -v
 ### 2️⃣ Clone the Repository
 
-git clone https://github.com/StefanBelic1/Mono_QA_zadatak.git
-cd Mono_QA_zadatak
+git clone https://github.com/StefanBelic1/Mono_QA_task.git
+cd Mono_QA_task
 ### 3️⃣ Install Dependencies
- npm install
+ npm install cypress --save dev
 - This will install Cypress and cypress-file-upload.
 
 ### 4️⃣ Run Cypress Tests
 🖥️ Option 1: Open Cypress GUI
 
 npx cypress open
-Then select:
-E2E Testing
-Choose browser (e.g. Chrome)
-Pick any test file under /e2e/ to run
+- Then select:
+- E2E Testing
+- Choose browser (e.g. Chrome)
+- Pick any test file under /e2e/ to run
 
 ⚡ Option 2: Run in Headless Mode
 npx cypress run
