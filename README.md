@@ -89,17 +89,26 @@ Additional validation tests include:
 🔗 [https://nodejs.org/](https://nodejs.org/)
 
 ### Verify installation:
-node -v
-npm -v
+- node -v
+- npm -v
 ### 2️⃣ Clone the Repository
 
-git clone https://github.com/StefanBelic1/Mono_QA_task.git
-cd Mono_QA_task
+- git clone https://github.com/StefanBelic1/Mono_QA_task.git
+- cd Mono_QA_task
 ### 3️⃣ Install Dependencies
- npm install cypress --save dev
-- This will install Cypress and cypress-file-upload.
+- npm init (package name : mono_qa_task, author : tester) 
+- npm install cypress --save-dev
+- This will install Cypress.
 
 ### 4️⃣ Run Cypress Tests
+
+**Before running tests:** 
+- Move the folders e2e and fixtures into a newly created folder named cypress.
+- If asked whether to replace the existing fixtures folder — click Yes.
+- Install the file upload plugin:
+    - npm install -save-dev cypress-file-upload
+- Open the file cypress/support/e2e.js (using VS Code or Notepad) and add the following line at the bottom: "import 'cypress-file-upload';"
+
 🖥️ Option 1: Open Cypress GUI
 
 npx cypress open
@@ -118,6 +127,3 @@ All test images used in upload tests are located inside the fixtures/ folder
 
 Screenshots for discovered bugs are stored in the screenshots/ folder.
 
-The package.json file includes all dependencies for quick setup and testing.
-
-Tests can be executed on both Windows and macOS/Linux environments.
