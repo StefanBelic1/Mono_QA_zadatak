@@ -6,10 +6,10 @@
 
 **Type:** UI Bug  
 **Severity:** Low  
-**Environment:** Chrome, Android 14, Windows 10  
+**Environment:** Chrome-version 142.0.7444.162, Android 14, Windows 10  
 
 ### Steps to Reproduce  
-1. Open the homepage https://demo.baasic.com/angular/starterkit-photo-gallery/main.  
+1. Open the homepage (https://demo.baasic.com/angular/starterkit-photo-gallery/main).  
 2. Observe the dropdown menu icon (screenshots/bug1.png).  
 
 ### Expected Result  
@@ -24,10 +24,10 @@ The dropdown button is unclear and looks like a theme selector (dark/light mode)
 
 **Type:** Frontend Bug  
 **Severity:** Medium  
-**Environment:** Chrome, Windows 10, Android 14  
+**Environment:** Chrome-version 142.0.7444.162, Windows 10, Android 14  
 
 ### Steps to Reproduce  
-1. Open the homepage https://demo.baasic.com/angular/starterkit-photo-gallery/main.  
+1. Open the homepage (https://demo.baasic.com/angular/starterkit-photo-gallery/main).  
 2. Scroll to the bottom.  
 3. Click on "Blog name."  
 
@@ -43,10 +43,10 @@ The copyright text should include the correct name and link to the relevant webs
 
 **Type:** Functional Bug  
 **Severity:** High  
-**Environment:** Chrome, Windows 10, Android 14  
+**Environment:** Chrome-version 142.0.7444.162, Windows 10, Android 14  
 
 ### Steps to Reproduce  
-1. Log in to the application.  
+1. Log in to the application (https://demo.baasic.com/angular/starterkit-photo-gallery/login).  
 2. Open My Album (e.g., "TestAlbum").  
 3. Click on any image within your album.  
 
@@ -62,10 +62,10 @@ Instead of displaying the image, a 404: "Page Missing" page appears. (screenshot
 
 **Type:** Functional Bug  
 **Severity:** Medium  
-**Environment:** Chrome, Windows 10  
+**Environment:** Chrome-version 142.0.7444.162, Windows 10  
 
 ### Steps to Reproduce  
-1. Log in to the application.  
+1. Log in to the application (https://demo.baasic.com/angular/starterkit-photo-gallery/login).    
 2. Open your profile.  
 3. Open the dropdown menu.  
 4. Click on "Menu."  
@@ -82,10 +82,10 @@ After clicking, the menu opens but the user is redirected to the homepage.
 
 **Type:** Functional / UX Bug  
 **Severity:** Medium  
-**Environment:** Chrome, Windows 10  
+**Environment:** Chrome-version 142.0.7444.162, Windows 10  
 
 ### Steps to Reproduce  
-1. Open the homepage.  
+1. Open the homepage (https://demo.baasic.com/angular/starterkit-photo-gallery/main).
 2. Observe the displayed albums.  
 
 ### Expected Result  
@@ -102,12 +102,13 @@ This causes confusion, as users cannot distinguish between albums. (screenshots/
 
 **Type:** Functional Bug  
 **Severity:** Low  
-**Environment:** Chrome, Windows 10, Android 14  
+**Environment:** Chrome-version 142.0.7444.162, Windows 10, Android 14  
 
-### Steps to Reproduce  
-1. Open an album containing multiple photos.  
-2. Delete one photo.  
-3. Observe the album photo count without refreshing the page.  
+### Steps to Reproduce
+1. Log in to the application (https://demo.baasic.com/angular/starterkit-photo-gallery/login).  
+2. Open an album containing multiple photos.  
+3. Delete one photo.  
+4. Observe the album photo count without refreshing the page.  
 
 ### Expected Result  
 After deletion, the album's photo count should update immediately to reflect the correct number.  
@@ -121,10 +122,11 @@ The old count remains visible until the page is manually refreshed.
 
 **Type:** Functional / UX Bug  
 **Severity:** Medium  
-**Environment:** Chrome, Windows 10, Android 14  
+**Environment:** Chrome-version 142.0.7444.162, Windows 10, Android 14  
 
 ### Steps to Reproduce  
-1. Open the upload form for adding a new photo.  
+1. Log in to the application (https://demo.baasic.com/angular/starterkit-photo-gallery/login).
+1. Open existing album and click the upload photo.  
 2. Enter a custom name in the "Photo Name" field (e.g., "forest").  
 3. Select and upload a file with a different filename (e.g., "IMG_1234.jpg").  
 4. Observe the "Photo Name" field after upload.  
@@ -141,10 +143,10 @@ After upload, the "Photo Name" field is automatically replaced with the file nam
 
 **Type:** UI / Content Bug  
 **Severity:** Low  
-**Environment:** Chrome, Windows 10, Android 14  
+**Environment:** Chrome-version 142.0.7444.162, Windows 10, Android 14  
 
 ### Steps to Reproduce  
-1. Open the homepage.  
+1. Open the homepage (https://demo.baasic.com/angular/starterkit-photo-gallery/main).  
 2. Observe the hero message: "We are celebrating the vastness of life."  
 
 ### Expected Result  
@@ -160,10 +162,10 @@ The current phrase "We are celebrating the vastness of life" sounds unnatural an
 
 **Type:** Functional Bug  
 **Severity:** High  
-**Environment:** Chrome, Windows 10, Android 14  
+**Environment:** Chrome-version 142.0.7444.162, Windows 10, Android 14  
 
 ### Steps to Reproduce  
-1. Open the homepage.  
+1. Open the homepage (https://demo.baasic.com/angular/starterkit-photo-gallery/main).  
 2. Open Menu → Login.  
 3. Click "Forgot Your Password? Recover Your Password Here!"  
 4. Enter a valid registered email.  
@@ -182,10 +184,10 @@ Password reset cannot be completed. (screenshots/bug_newPassword.png)
 
 **Type:** Functional Bug  
 **Severity:** High  
-**Environment:** Chrome, Windows 10, Android 14  
+**Environment:** Chrome-version 142.0.7444.162, Windows 10, Android 14  
 
 ### Steps to Reproduce  
-1. Open the Login page.  
+1. Open the Login page (https://demo.baasic.com/angular/starterkit-photo-gallery/login).  
 2. Click any option under Social Login (Facebook, Google, Twitter, GitHub).  
 
 ### Expected Result  
@@ -202,10 +204,10 @@ Social login is not functional.
 
 **Type:** Validation / Functional Bug  
 **Severity:** High  
-**Environment:** Chrome, Android 14, Windows 10  
+**Environment:** Chrome-version 142.0.7444.162, Android 14, Windows 10  
 
 ### Steps to Reproduce  
-1. Open the registration page.  
+1. Open the registration page (https://demo.baasic.com/angular/starterkit-photo-gallery/register).  
 2. Enter an invalid email address, e.g., "test@gmailc.om".  
 3. Complete registration.  
 4. Attempt to register.  
@@ -223,10 +225,10 @@ The user cannot confirm the account or log in.
 
 **Type:** UI Bug  
 **Severity:** Medium  
-**Environment:** Chrome, Android 14  
+**Environment:** Android 14  
 
 ### Steps to Reproduce  
-1. Open the homepage.  
+1. Open the homepage (https://demo.baasic.com/angular/starterkit-photo-gallery/main).  
 2. Refresh the page.  
 
 ### Expected Result  
@@ -241,10 +243,10 @@ After refresh, the dropdown menu icon disappears, leaving an empty white space. 
 
 **Type:** Functional Bug  
 **Severity:** Medium  
-**Environment:** Chrome, Android 14  
+**Environment:** Chrome-version 142.0.7444.162, Android 14  
 
 ### Steps to Reproduce  
-1. Open the homepage.  
+1. Open the homepage(https://demo.baasic.com/angular/starterkit-photo-gallery/main).  
 2. Click the dropdown menu to open it.  
 3. Click again to close it.  
 
@@ -260,10 +262,10 @@ The dropdown remains open and does not respond to clicks. (screenshots/notWorkin
 
 **Type:** Functional Bug  
 **Severity:** High  
-**Environment:** Chrome, Android 14  
+**Environment:** Chrome-version 142.0.7444.162, Android 14  
 
 ### Steps to Reproduce  
-1. Open the homepage.  
+1. Open the homepage (https://demo.baasic.com/angular/starterkit-photo-gallery/main).  
 2. Click the gallery icon.  
 3. Scroll down.  
 
@@ -279,10 +281,10 @@ After scrolling, the gallery closes unexpectedly, preventing browsing.
 
 **Type:** UX / Functional Bug  
 **Severity:** Medium  
-**Environment:** Chrome, Windows 10, Android 14  
+**Environment:** Chrome-version 142.0.7444.162, Windows 10, Android 14  
 
 ### Steps to Reproduce  
-1. Open the application and go to the Create Album page.  
+1. Login to the application (https://demo.baasic.com/angular/starterkit-photo-gallery/login) and go to the Create Album page.  
 2. Enter a valid Album Name and Description.  
 3. Click Save Album.  
 4. Observe that a new screen appears saying "Almost done!", asking to upload a cover image.  
@@ -301,10 +303,10 @@ This introduces an unnecessary extra step and interrupts the album creation flow
 
 **Type:** Validation / Security Bug  
 **Severity:** High  
-**Environment:** Chrome, Windows 10, Android 14  
+**Environment:** Chrome-version 142.0.7444.162, Windows 10, Android 14  
 
 ### Steps to Reproduce  
-1. Open the registration page.  
+1. Open the registration page (https://demo.baasic.com/angular/starterkit-photo-gallery/register).  
 2. Enter a valid email address and username.  
 3. Set the password to a weak value, e.g., "asdb" (only lowercase letters, no numbers or symbols).  
 4. Complete the registration process.  
@@ -327,7 +329,7 @@ The application allows registration with an extremely weak password such as "asd
 
 **Type:** UX Improvement  
 **Priority:** Medium  
-**Environment:** Chrome, Windows 10  
+**Environment:** Chrome-version 142.0.7444.162, Windows 10  
 
 #### Description  
 Currently, it is only possible to search by photo title.  
@@ -341,7 +343,7 @@ Allowing users to search by author would make it easier to find photos from spec
 
 **Type:** UX Improvement  
 **Priority:** Medium  
-**Environment:** Chrome, Windows 10  
+**Environment:** Chrome-version 142.0.7444.162, Windows 10  
 
 #### Description  
 Currently, photos can only be uploaded via the standard "Browse files" option.  
@@ -357,7 +359,7 @@ The drag & drop feature should complement, not replace, the existing upload dial
 
 **Type:** Functional Improvement  
 **Priority:** Medium  
-**Environment:** Chrome, Windows 10  
+**Environment:** Chrome-version 142.0.7444.162, Windows 10  
 
 #### Description  
 Currently, uploaded photos automatically inherit the file name, even if the user entered a custom title beforehand.  
@@ -373,7 +375,7 @@ Prevents user input from being overwritten and reduces the need to re-enter phot
 
 **Type:** UX Improvement  
 **Priority:** Medium  
-**Environment:** Chrome, Windows 10  
+**Environment:** Chrome-version 142.0.7444.162, Windows 10  
 
 #### Description  
 The gallery currently uses infinite scrolling.  
@@ -390,7 +392,7 @@ Introduce pagination — e.g., display 20 photos per page, with navigation to ne
 
 **Type:** UX Improvement  
 **Priority:** Medium  
-**Environment:** Chrome, Android 14, Windows 10  
+**Environment:** Chrome-version 142.0.7444.162, Android 14, Windows 10  
 
 #### Description  
 Currently, search results appear only after entering the full term and pressing Enter.  
@@ -408,7 +410,7 @@ Include a slight delay (e.g., 300–500 ms) to avoid excessive API requests.
 
 **Type:** UX Improvement  
 **Priority:** Low  
-**Environment:** Chrome, Windows 10  
+**Environment:** Chrome-version 142.0.7444.162, Windows 10  
 
 #### Description  
 The gallery requires an additional click to open before scrolling, instead of being visible immediately.  
