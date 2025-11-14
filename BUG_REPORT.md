@@ -9,7 +9,7 @@
 **Environment:** Chrome, Android 14, Windows 10  
 
 ### Steps to Reproduce  
-1. Open the homepage.  
+1. Open the homepage https://demo.baasic.com/angular/starterkit-photo-gallery/main.  
 2. Observe the dropdown menu icon (screenshots/bug1.png).  
 
 ### Expected Result  
@@ -27,7 +27,7 @@ The dropdown button is unclear and looks like a theme selector (dark/light mode)
 **Environment:** Chrome, Windows 10, Android 14  
 
 ### Steps to Reproduce  
-1. Open the homepage.  
+1. Open the homepage https://demo.baasic.com/angular/starterkit-photo-gallery/main.  
 2. Scroll to the bottom.  
 3. Click on "Blog name."  
 
