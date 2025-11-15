@@ -94,7 +94,7 @@ npx cypress open
 - npx cypress run
 or run a specific test:
 - npx cypress run --spec "cypress/e2e/login.cy.js"
-🧠 Notes for Reviewers
+**🧠 Notes for Reviewers**
 - All test images used in upload tests are located inside the fixtures/ folder
   (Cypress automatically loads files from there).
 
