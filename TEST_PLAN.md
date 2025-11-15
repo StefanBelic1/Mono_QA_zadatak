@@ -38,6 +38,6 @@ It allows users to:
 
 ### Tools and Environment  
 - **Automation Tool:** Cypress  
-- **Browser:** Chrome  
+- **Browser:** Chrome-version 142.0.7444.162  
 - **Operating Systems:** Windows 10, Android 14  
 - **Test Data:** test user account and sample images (.jpg)  
