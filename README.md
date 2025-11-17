@@ -44,7 +44,6 @@ The automated Cypress tests cover the following scenarios:
 | **Create Gallery** | User can create a new gallery/album | **HIGH** |
 | **Delete Gallery** | User can delete an existing album | **HIGH** |
 | **Open Album** | User can open an existing album and view photos | **MEDIUM** |
-| **Upload Photo** | User can upload a new image to an album | **HIGH** |
 | **Logout** | User logs out successfully | **HIGH** |
 
 Additional validation tests include:
